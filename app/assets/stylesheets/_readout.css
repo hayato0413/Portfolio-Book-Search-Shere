@@ -1,0 +1,108 @@
+.row-margin {
+  margin-bottom: 15px;
+}
+.feadout {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 2147483647;
+}
+.readout-box {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  background-color: #ffffff;
+  width: 50%;
+  height: 90%;
+  padding: 3% 4%;
+  z-index: 3;
+  border-radius: 0.4rem;
+  overflow: scroll;
+  font-size: 18px;
+}
+.readout-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.readout-cancel a {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.readout-book-category-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.readout-attention {
+  text-align: right;
+}
+/* インプット */
+.readout-book-title input, .readout-book-author input, .readout-book-publish input {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px; 
+}
+.readout-book-review  textarea{
+  width: 100%;
+  margin-bottom: 10px;
+  resize: none;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.readout-book-submit {
+  text-align: center;
+  margin-top: 10px;
+}
+.readout-book-submit input {
+  background-color: #00CC99;
+  border: 1px solid #00CC99;
+  padding: 10px;
+  width: 50%;
+  border-radius: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+
+/* お気に入り */
+
+.readout-book-evaluation {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 30px 0;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 5px;
+}
+.readout-book-evaluation input[type=radio] {
+  display: none;
+}
+.readout-book-evaluation label {
+  position: relative;
+  padding: 0 5px;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 30px;
+}
+.readout-book-evaluation-value {
+  margin-right: 20px;
+  font-weight: bold;
+}
+.readout-book-evaluation input[type=radio]:checked ~ label {
+  color: #ffcc00;
+}
+
+@media screen and (max-width: 750px) {
+  .book-evaluation {
+    margin: 10px auto;
+  }
+  .readout-box {
+    left: 10%;
+    width: 80%;
+  }
+}

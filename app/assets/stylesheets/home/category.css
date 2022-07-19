@@ -1,0 +1,29 @@
+.category-box {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+.category-search-box {
+  white-space: nowrap;
+}
+#category-book-seach {
+  padding: 5px 10px;
+  margin: 20px 5px 10px 0;
+  width: 300px;
+}
+.category-item {
+  width: 45%;
+  padding: 20px 0;
+  border: 1px solid #dcdcdc;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.odd-item {
+  margin-right: 10%;
+}
+.category-item:hover {
+  transform: scale(1.1);
+  transition: 0.5s; 
+}

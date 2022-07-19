@@ -1,0 +1,70 @@
+.header {
+  border-bottom: 1px solid #DCDCDC;
+  background-color: white;
+  height: 100px;
+}
+.header-row {
+  display: flex;
+  margin: auto 12vw;
+  height: 100px;
+  align-items: center;
+  text-align: center;
+}
+.row-size {
+  width: 33.3%;
+}
+.header-title img {
+  width: 300px;
+  align-self: flex-start;
+}
+.header-search-area {
+  margin-right: 5px;
+}
+.header-search-area input {
+  width: 70%;
+  padding: 3px 8px;
+}
+.header-sign-link ul {
+  display: flex;
+  justify-content: end;
+}
+.header-sign-link .login-button {
+  margin-right: 3vw;
+}
+.header-sign-link .login-button, .header-sign-link .sign-button{
+  background-color: #00CC99;
+  border-color: #00CC99;
+}
+.header-sign-link li {
+  text-align: center;
+  padding: 7px 15px;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1230px) {
+  .header-row {
+    margin: auto;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header-search-area {
+    display: none;
+  }
+  .header-row {
+    justify-content: space-between;
+    padding: 10px 10px;
+  }
+  .row-size {
+    width: auto;
+  }
+  .header-title {
+    width: 150px;
+    margin-right: 0;
+  }
+  .login-button, .sign-button {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,12 @@
+.sub-header {
+  border-bottom: 1px solid #dcdcdc;
+  background-color: white;
+  height: 60px;
+}
+.sub-header-img {
+  padding-top: 15px;
+}
+.sub-header-img img{
+  margin-left: 2vw;
+  height: 30px;
+}
