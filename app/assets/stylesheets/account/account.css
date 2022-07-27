@@ -1,8 +1,9 @@
 .account-container {
   width: 100%;
+  overflow-y: scroll;
 }
 .account-box {
-  width: 50%;
+  width: 80%;
   margin: 10vh auto;
   text-align: center;
   background-color: white;
@@ -15,11 +16,9 @@
 }
 .account-input-box {
   margin-top: 20px;
-}
-.account-input-box label{
-  display: inline-block;
-  width: 30%;
-  text-align: left;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .account-input-box input {
   width: 50%;
@@ -34,6 +33,33 @@
   padding: 5px 10px;
   color: white;
   font-weight: bold;
+}
+.account-submit-btn a {
+  background-color: #00cc99;
+  border-color: #00cc99;
+  border-radius: 0.25rem;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.account-detail-content {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin: 0 auto 30px auto;
+  width: 60%;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 30px;
+}
+.account-detail-img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 2.5rem;
+  object-fit: cover;
+}
+.account-edit-img {
+  border: 1px solid #000;
 }
 
 @media screen and (max-width: 1000px) {

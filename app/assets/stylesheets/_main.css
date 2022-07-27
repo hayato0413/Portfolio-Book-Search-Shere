@@ -8,7 +8,7 @@
   padding: 0 20px;
   border-right: 1px solid #DCDCDC;
   background-color: white;
-  min-height: 688px;
+  height: 100%;
 }
 .content {
   flex: 7 1 auto;

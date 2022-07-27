@@ -7,7 +7,6 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all'%>
-    <%= javascript_pack_tag 'application'%>
 
     <link rel="stylesheet"href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"> 
@@ -15,8 +14,10 @@
   </head>
 
   <body>
+    <%= render 'layouts/notice' %>
     <%= render 'layouts/header' %>
     <%= render 'layouts/main' %>
     <%= render 'layouts/readout'%>
   </body>
+  <%= javascript_pack_tag 'application'%>
 </html>

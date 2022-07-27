@@ -60,3 +60,5 @@ gem 'react-rails'
 gem "simple_calendar", "~> 2.4"
 
 gem 'rails-i18n', '~> 6.0.0'
+
+gem 'devise'

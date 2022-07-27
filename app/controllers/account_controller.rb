@@ -1,7 +1,5 @@
 class AccountController < ApplicationController
-  def sign_up 
-  end
-
-  def sign_in 
+  def show
+    @user = User.find(params[:id]) 
   end
 end
