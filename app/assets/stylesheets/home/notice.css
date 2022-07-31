@@ -1,0 +1,16 @@
+.notice-box {
+  border-bottom: 1px solid #dcdcdc;
+}
+.notice-box:nth-child(1) {
+  border-top: 1px solid #dcdcdc;
+  margin-top: 20px;
+}
+.notice-content {
+  padding: 30px 0; 
+}
+.notice-content .fa {
+  display: flex;
+}
+.notice-content p {
+  margin-left: 20px;
+}

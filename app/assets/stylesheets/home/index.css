@@ -1,0 +1,42 @@
+.home-box {
+  border: 1px solid #DCDCDC;
+  padding: 20px 40px;
+  margin-top: 20px;
+}
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.book-title h2{
+  max-width: 350px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.home-account-row {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 20px;
+}
+.home-account-img {
+  padding-right: 15px;
+}
+.home-account-img img{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1.25rem;
+  object-fit: cover;
+}
+
+
+@media screen and (max-width: 750px) {
+  .home-content {
+    flex-direction: column;
+  }
+  .home-account-row {
+    justify-content: center;
+  }
+}

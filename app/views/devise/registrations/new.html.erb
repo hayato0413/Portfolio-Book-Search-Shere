@@ -1,0 +1,43 @@
+<div class="account-container">
+  <div class="account-box">
+    <div class="account-content">
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= render "devise/shared/error_messages", resource: resource %>
+
+        <div class="account-title">
+          <h2>新規登録</h2>
+        </div>
+        
+         <div class="field account-name account-input-box">
+          <%= f.label "名前" %>
+          <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+        </div>
+        <div class="field account-email account-input-box">
+          <%= f.label :email %>
+          <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        </div>
+
+        <div class="field account-password account-input-box">
+          <%= f.label :password %>
+          <% if @minimum_password_length %>
+          <em>(英数字<%= @minimum_password_length %>文字以上)</em>
+          <% end %>
+          <%= f.password_field :password, autocomplete: "new-password" %>
+        </div>
+
+        <div class="field account-repassword account-input-box">
+          <%= f.label :password_confirmation %>
+          <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+        </div>
+
+        <div class="actions account-submit-btn">
+          <%= f.submit "新規登録" %>
+        </div>
+      <% end %>      
+    </div>
+  </div>
+</div>
+
+
+
+<%= render "devise/shared/links" %>

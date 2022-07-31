@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Myapp</title>
+    <title>Read Out</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all'%>
+
+    <link rel="stylesheet"href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"> 
+    <%= favicon_link_tag('favicon.ico') %>
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/notice' %>
+    <%= render 'layouts/header' %>
+    <%= render 'layouts/main' %>
+    <%= render 'layouts/readout'%>
   </body>
+  <%= javascript_pack_tag 'application'%>
 </html>
